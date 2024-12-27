@@ -6,14 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		26CF82DA2D1ECDB3005037E4 /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF82D92D1ECDB3005037E4 /* ViewProvider.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		26CF82AD2D1E92AB005037E4 /* SwiftUI-Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CF82D92D1ECDB3005037E4 /* ViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		26CF82AF2D1E92AB005037E4 /* SwiftUI-Animation */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SwiftUI-Animation";
+			sourceTree = "<group>";
+		};
+		26CF82D02D1ECCAA005037E4 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26CF82D62D1ECD44005037E4 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +48,9 @@
 			isa = PBXGroup;
 			children = (
 				26CF82AF2D1E92AB005037E4 /* SwiftUI-Animation */,
+				26CF82D02D1ECCAA005037E4 /* Models */,
+				26CF82D62D1ECD44005037E4 /* Views */,
+				26CF82D92D1ECDB3005037E4 /* ViewProvider.swift */,
 				26CF82AE2D1E92AB005037E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +80,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				26CF82AF2D1E92AB005037E4 /* SwiftUI-Animation */,
+				26CF82D02D1ECCAA005037E4 /* Models */,
+				26CF82D62D1ECD44005037E4 /* Views */,
 			);
 			name = "SwiftUI-Animation";
 			packageProductDependencies = (
@@ -119,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CF82DA2D1ECDB3005037E4 /* ViewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

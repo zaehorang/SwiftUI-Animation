@@ -12,7 +12,7 @@ struct NavigationContainer: View {
     
     var body: some View {
         NavigationStack {
-            List(ViewProvider.shared.viewItems) { item in
+            List(ViewProvider.shared.viewItems.reversed()) { item in
                 NavigationLink {
                     item.view
                 } label: {

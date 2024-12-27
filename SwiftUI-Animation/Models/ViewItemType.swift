@@ -7,4 +7,5 @@
 
 enum ViewItemType {
     case animation
+    case interaction
 }

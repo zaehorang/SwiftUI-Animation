@@ -13,18 +13,6 @@ struct H1_Transition: View {
     }
 }
 
-struct H2_Transition: View {
- var body: some View {
-        Text("22222222")
-    }
-}
-
-struct H3_Transition: View {
- var body: some View {
-        Text("33333")
-    }
-}
-
 #Preview {
     H1_Transition()
 }

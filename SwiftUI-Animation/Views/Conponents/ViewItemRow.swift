@@ -13,7 +13,7 @@ struct ViewItemRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             // Title
-            Text("\(viewItem.id). \(viewItem.title)")
+            Text("\(viewItem.title) (\(viewItem.id))")
                 .font(.headline)
                 .lineLimit(1)
 

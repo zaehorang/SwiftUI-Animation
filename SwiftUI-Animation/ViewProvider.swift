@@ -13,12 +13,12 @@ final class ViewProvider {
     let viewItems: [ViewItem] = [
         ViewItem(
             id: 1,
-            title: "흔들기 애니메이션1",
-            description: "Spring 111",
-            createdDate: "2024-12-27",
-            difficulty: .hard,
-            viewType: .animation,
-            view: HAnyView(H1_Transition())
+            title: "Basic Transition",
+            description: "Applies a simple and smooth transition effect when the view appears or disappears.",
+            createdDate: "2024-12-28",
+            difficulty: .easy,
+            viewType: .transition,
+            view: HAnyView(H1_Basic_Transition())
         ),
         ViewItem(
             id: 0, // 고유 ID

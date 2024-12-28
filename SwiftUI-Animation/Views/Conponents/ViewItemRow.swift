@@ -46,7 +46,7 @@ struct ViewItemRow: View {
         createdDate: "2024-12-27",
         difficulty: .hard,
         viewType: .animation,
-        view: HAnyView(H1_Transition())
+        view: HAnyView(H1_Basic_Transition())
     )
     
     ViewItemRow(viewItem: viewItem)

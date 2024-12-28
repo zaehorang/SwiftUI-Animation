@@ -26,14 +26,11 @@ struct HButtonModifier: ViewModifier {
         content
             .padding()
             .bold()
-            .foregroundStyle(.yellow)
+            .foregroundStyle(.white)
             .frame(width: buttonWidth)
-            .background(
-                RoundedRectangle(
-                    cornerRadius: 15,
-                    style: .continuous
-                )
-                .stroke(.yellow, lineWidth: 2)
+            .background(.yellow)
+            .clipShape(
+                RoundedRectangle(cornerRadius: 15)
             )
     }
 }

@@ -12,19 +12,19 @@ struct H0_CustomButton_Interactions: View {
     
     var body: some View {
         VStack(spacing: 10) {
-            Button("Default Button") {
+            Button("Default") {
                 changeStatusText("Default Button Tapped")
             }.buttonStyle(.hButtonSyle)
             
-            Button("Bigger Button") {
+            Button("Bigger") {
                 changeStatusText("Bigger Button Tapped")
             }.buttonStyle(.hBiggerButtonSyle)
             
-            Button("Smaller Button") {
+            Button("Smaller") {
                 changeStatusText("Smaller Button Tapped")
             }.buttonStyle(.hSmallerButtonStyle)
             
-            Button("Double Tapped Button") {
+            Button("Double Tapped") {
                 changeStatusText("First Double Tapped Button Tapped")
             }.buttonStyle(.hDoubleTapButtonStyle {
                 changeStatusText("Second Double Tapped Button Tapped")

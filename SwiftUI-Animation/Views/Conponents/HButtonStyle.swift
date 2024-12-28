@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct HButtonModifier: ViewModifier {
+    enum ButtonSize {
+        case small, medium, large
+    }
+    
+    var size: ButtonSize
+    
+    private var buttonWidth: CGFloat {
+        switch size {
+        case .small: return 100
+        case .medium: return 200
+        case .large: return 300
+        }
+    }
+    
     func body(content: Content) -> some View {
         content
             .padding()
             .bold()
             .foregroundStyle(.yellow)
+            .frame(width: buttonWidth)
             .background(
                 RoundedRectangle(
                     cornerRadius: 15,
@@ -24,8 +39,8 @@ struct HButtonModifier: ViewModifier {
 }
 
 extension View {
-    func hButton() -> some View {
-        self.modifier(HButtonModifier())
+    func hButton(size: HButtonModifier.ButtonSize = .medium) -> some View {
+        self.modifier(HButtonModifier(size: size))
     }
 }
 

@@ -12,6 +12,15 @@ final class ViewProvider {
     // MARK: - View Item 추가
     let viewItems: [ViewItem] = [
         ViewItem(
+            id: 2,
+            title: "Shake Animation",
+            description: "A custom animation effect that shakes the view.",
+            createdDate: "2024-12-29",
+            difficulty: .medium,
+            viewType: .animation,
+            view: HAnyView(H2_Shake_Animation())
+        ),
+        ViewItem(
             id: 1,
             title: "Basic Transition",
             description: "Applies a simple and smooth transition effect when the view appears or disappears.",

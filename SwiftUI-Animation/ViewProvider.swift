@@ -12,6 +12,15 @@ final class ViewProvider {
     // MARK: - View Item 추가
     let viewItems: [ViewItem] = [
         ViewItem(
+            id: 3,
+            title: "profile Animation",
+            description: "A profile animation effectㄴ that use .matchedGeometryEffect()",
+            createdDate: "2024-12-30",
+            difficulty: .hard,
+            viewType: .animation,
+            view: HAnyView(H3_Profile_Animation())
+        ),
+        ViewItem(
             id: 2,
             title: "Shake Animation",
             description: "A custom animation effect that shakes the view.",

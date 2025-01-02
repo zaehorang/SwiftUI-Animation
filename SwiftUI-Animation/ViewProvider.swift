@@ -12,9 +12,18 @@ final class ViewProvider {
     // MARK: - View Item 추가
     let viewItems: [ViewItem] = [
         ViewItem(
+            id: 4,
+            title: "Caroussel Slider With Paging Control",
+            description: "A carousel slider with paging control effect",
+            createdDate: "2024-12-30",
+            difficulty: .veryHard,
+            viewType: .animation,
+            view: HAnyView(H4_CarouselSliderWithPagingControl_Animation())
+        ),
+        ViewItem(
             id: 3,
             title: "profile Animation",
-            description: "A profile animation effectㄴ that use .matchedGeometryEffect()",
+            description: "A profile animation effect that use .matchedGeometryEffect()",
             createdDate: "2024-12-30",
             difficulty: .hard,
             viewType: .animation,

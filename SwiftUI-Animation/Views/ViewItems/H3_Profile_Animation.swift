@@ -28,9 +28,6 @@ struct H3_Profile_Animation: View {
     ]
     
     var body: some View {
-        
-
-        
         if let selectedProfile = selectedProfile {
             // 상세 프로필 뷰
             ProfileDetailView(profile: selectedProfile, animation: animation) {

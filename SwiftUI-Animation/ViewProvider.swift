@@ -12,6 +12,15 @@ final class ViewProvider {
     // MARK: - View Item 추가
     let viewItems: [ViewItem] = [
         ViewItem(
+            id: 5,
+            title: "Mail App Tap Bar Animation",
+            description: "A dynamic animation has been added to the Tab Bar button.",
+            createdDate: "2024-12-30",
+            difficulty: .veryHard,
+            viewType: .animation,
+            view: HAnyView(H5_MailAppTapBar_Animation())
+        ),
+        ViewItem(
             id: 4,
             title: "Caroussel Slider With Paging Control",
             description: "A carousel slider with paging control effect",
